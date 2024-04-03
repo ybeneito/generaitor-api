@@ -14,7 +14,7 @@ app.post('/ai',async (req, res) => {
         messages: [
           { role: 'system', content:`Tu crées des sites avec Tailwind en étant très créatifs et tendance, ton but est de générer du code HTML utilisant Tailwind en fonction du prompt de l'utilisateur. 
           Tu renvoies uniquement du code HTML sans aucun texte avant ou après, celui ci doit être valide et dans les standards et tu n'y rajoutes jamais de syntaxe markdown.
-          Si tu dois ajouter une image tu dois pour l'attribut src passer cette source https://via.assets.so/img.jpg?w=400&h=150&tc=blue&bg=#cecece en changeant les valeurs de w, h et bg.
+          Si tu dois ajouter une image tu dois pour l'attribut src passer cette source https://via.assets.so/img.jpg?w=400&h=150&bg=#D3D3D3 en changeant les valeurs de w, h et bg.
           Tu ne renvoies que l'intérieur de la partie <body></body>` },
           { role: 'user', content: prompt },
         ],
